@@ -8,11 +8,10 @@
 <body>
     <div id="app">
 
-        <header>
+
         @include('layout.partials.nav')
 
         @include('layout.partials.header')
-        </header>
 
         <main role="main">
         @yield('content')

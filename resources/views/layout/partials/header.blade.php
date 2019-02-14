@@ -1,5 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">GMMA Alumni</a>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">Test Site</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,18 +27,16 @@
         </ul>
 
         <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item mr-3">
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-primary my-2 my-sm-0 btn-sm" type="submit">Search</button>
                 </form>
             </li>
-            <li class="divider">|</li>
             @guest
-                <li class="nav-item">
+                <li class="nav-item mr-3">
                     <a class="btn btn-outline-success btn-sm" href="/login">Login</a>
                 </li>
-                <li class="divider">|</li>
                 <li class="nav-item">
                     <a class="btn btn-outline-success btn-sm" href="/register">Register</a>
                 </li>
@@ -62,3 +61,4 @@
         </ul>
     </div>
 </nav>
+</header>
