@@ -27,7 +27,7 @@ class CreateUsersTable extends Migration
             $table->string('postal_code', 20);
             $table->string('status', 20);
             $table->string('marital_status', 20);
-            $table->string('profile_picture');
+            $table->string('profile_picture')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->timestamp('accepted_terms_at')->nullable();
