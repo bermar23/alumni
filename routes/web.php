@@ -29,8 +29,5 @@ Route::prefix('admin')->group(function () {
   Route::get('login', 'Admin\Auth\LoginController@login')->name('admin.auth.login');
   Route::post('login', 'Admin\Auth\LoginController@loginAdmin')->name('admin.auth.loginAdmin');
   Route::post('logout', 'Admin\Auth\LoginController@logout')->name('admin.auth.logout');
+  Route::get('logout', 'Admin\Auth\LoginController@logout')->name('admin.auth.logout');
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
