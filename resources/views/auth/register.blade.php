@@ -11,10 +11,6 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                        @if ($errors->any())
-                                {{ implode('', $errors->all('<div>:message</div>')) }}
-                        @endif
-
                         <div class="form-group row">
                             <label for="first_name" class="col-md-4 col-form-label text-md-right">{{ __('First Name') }}</label>
 

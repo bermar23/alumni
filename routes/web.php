@@ -21,7 +21,13 @@ Route::middleware(['auth'])->group(function () {
 
   Route::get('/profile', 'ProfileController@index')->name('profile');
 
+  Route::put('/profile', 'ProfileController@index')->name('profile');
+
   Route::get('/setting', 'HomeController@index')->name('setting');
+
+  Route::get('/security', 'HomeController@index')->name('security');
+
+  Route::get('/security', 'HomeController@index')->name('security');
 
 });
 
